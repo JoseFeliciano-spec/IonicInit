@@ -1,0 +1,6 @@
+.contenedor{
+    margin-top: 2rem!important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}

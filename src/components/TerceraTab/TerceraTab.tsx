@@ -1,0 +1,18 @@
+import React from 'react';
+import './TerceraTab.css';
+import { IonLabel } from '@ionic/react';
+
+const palabra = 'Primero estaban las aplicaciones, nativas del sistema operativo. Para Android, eso significó desarrollar en Java y para iOS, rápido. De nuevo, tenías que desarrollar una aplicación web para escritorios. Esto significaba que, aunque se suponía que debías usar la misma aplicación con la misma funcionalidad en 3 plataformas, no había ninguna estructura común subyacente en las tres. Puede crear artificialmente la misma apariencia, pero eso planteó más problemas de los que resolvió. Dado que todas las plataformas tienen diferentes API, recordamos la frustración que causaría a los clientes, solo querían el mismo diseño de la aplicación, pero para nosotros era como crear algo que no debía ser Luego vino HTML 5 y lo cambió todo. Lo que había estado frenando a los desarrolladores web durante tanto tiempo, finalmente cambió. Se sintió como si nos hubieran quitado los grilletes. El navegador estaba vivo de nuevo. ¡Aplicaciones web de bienvenida! Dado que ahora HTML era tan poderoso como los marcos de desarrollo nativos, pensamos que podíamos crear una aplicación web básica, colocarla en un contenedor del navegador y ejecutarla como una aplicación en Android e iOS. Pensamos que lo teníamos calculado. Pero hubo problemas cuando creamos nuestra primera aplicación. En primer lugar, la manipulación DOM de los navegadores no es tan buena como para proporcionar menús deslizantes y cinética. Así que terminó pareciendo un navegador, aunque parecía una aplicación nativa. La verdad subyacente había sido revelada Mientras tanto, en la web, decimos el surgimiento de JavaScript y un número infinito de marcos construidos sobre él. Debes haber escuchado los más populares como jQuery que hicieron que la web fuera hermosa. Ahora estos también funcionaron en móviles, ya que javascript estaba en todas partes, creciendo cada vez más rápido. Habíamos estado trabajando con jQuery para manipular DOM y hacer que las aplicaciones web parecieran nativas, pero después de un tiempo el código se volvió inmanejable. Volvió a la zona cero. ¿Javascript nos había dejado varados y secos? Recuerdo la sensación, fue horrible.Pero las grandes empresas como Google se enfrentaban a los mismos problemas, a pesar de que apostaban más sus posibilidades a Python y Ruby que a Java Script. Pero intervinieron para salvar el día. Se llamó Angular. El superhéroe del lado del cliente MVC. DOM estaba bajo control de nuevo. A medida que Angular maduró, aparecieron más marcos como Ionic, que funciona con Angular, pero funciona con móviles en lugar de con computadoras de escritorio. Ergo, teníamos Angular + Ionic + NodeJS = aplicación verdaderamente híbrida. El concepto es crear una aplicación web simple primero, mantenerla allí, luego transformarla en aplicaciones móviles y mantenerlas por separado. Esta arquitectura es esencialmente escalable y modular, lo que permite que una sola aplicación se transforme en una aplicación específica de múltiples plataformas a lo largo del tiempo. A medida que las aplicaciones ocupan cada vez más espacio de nuestra vida, estamos seguros de que veremos muchas aplicaciones híbridas debido a su arquitectura escalable e independiente de la plataforma inherente.';
+const TerceraTab: React.FC = () => {
+    return (
+        <div className="contenedor-hibrida">
+            <IonLabel className="text-principal">
+                Historia de las aplicaciones hibridas
+            </IonLabel>
+            <IonLabel className="text-secundario">
+                {palabra}
+            </IonLabel>
+        </div>
+    )
+}
+export default TerceraTab;
