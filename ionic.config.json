@@ -1,0 +1,7 @@
+{
+  "name": "ionicinit",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
